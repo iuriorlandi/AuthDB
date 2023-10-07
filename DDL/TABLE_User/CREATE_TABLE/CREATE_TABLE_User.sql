@@ -7,7 +7,7 @@ BEGIN
         UserID INT PRIMARY KEY IDENTITY,
         Username NVARCHAR(50) NOT NULL,
         Email NVARCHAR(200) NOT NULL,
-        PasswordHash NVARCHAR(128) NOT NULL,
-        Salt NVARCHAR(128) NOT NULL
+        PasswordHash VARBINARY(MAX) NOT NULL,
+        Salt VARBINARY(MAX) NOT NULL
     );
 END;
